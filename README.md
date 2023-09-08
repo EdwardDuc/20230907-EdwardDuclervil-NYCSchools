@@ -20,8 +20,10 @@ A Simple Application Displaying Schools in NYC along with additional info
 - A request protocol was created to create the proper URL needed for each Request. 
 - The Standard Library 'Error' was extended to handle a few basic api errors, including badURLError, noDataFoundError, dataParseError, responseError
 
+## Screenshots
 
-###Shortcomings
+
+### Shortcomings
     - Due to time constraints, The UI sufffered greatly. 
         - Aside from a few text formats, additional UI was not added
     - Search functionality only filters by the name of the school.
@@ -32,5 +34,5 @@ A Simple Application Displaying Schools in NYC along with additional info
     - The Initial plan was to implement MapKit and display the location for places that provided a longitude and latitude. 
 
 
-##Screenshots
+
 
