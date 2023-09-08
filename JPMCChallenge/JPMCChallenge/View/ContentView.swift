@@ -55,7 +55,7 @@ struct ContentView: View {
                     Text(school.schoolName)
                 }
             }
-        }
+        }.listStyle(.inset)
     }
 
 }
