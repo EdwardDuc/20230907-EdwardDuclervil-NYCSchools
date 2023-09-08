@@ -1,0 +1,714 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		025138902AAA010E0049D4DB /* JPMCChallengeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0251388F2AAA010E0049D4DB /* JPMCChallengeApp.swift */; };
+		025138922AAA010E0049D4DB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 025138912AAA010E0049D4DB /* ContentView.swift */; };
+		025138942AAA01100049D4DB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 025138932AAA01100049D4DB /* Assets.xcassets */; };
+		025138972AAA01100049D4DB /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 025138962AAA01100049D4DB /* Preview Assets.xcassets */; };
+		025138A12AAA01100049D4DB /* JPMCChallengeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 025138A02AAA01100049D4DB /* JPMCChallengeTests.swift */; };
+		025138AB2AAA01100049D4DB /* JPMCChallengeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 025138AA2AAA01100049D4DB /* JPMCChallengeUITests.swift */; };
+		025138AD2AAA01100049D4DB /* JPMCChallengeUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 025138AC2AAA01100049D4DB /* JPMCChallengeUITestsLaunchTests.swift */; };
+		025138BE2AAA029F0049D4DB /* Schools.swift in Sources */ = {isa = PBXBuildFile; fileRef = 025138BD2AAA029F0049D4DB /* Schools.swift */; };
+		025138C02AAA0AA90049D4DB /* SchoolViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 025138BF2AAA0AA90049D4DB /* SchoolViewModel.swift */; };
+		025138C22AAA0B630049D4DB /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 025138C12AAA0B630049D4DB /* NetworkManager.swift */; };
+		025138C42AAA0B750049D4DB /* NetworkProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 025138C32AAA0B750049D4DB /* NetworkProtocol.swift */; };
+		025138C62AAA0B970049D4DB /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 025138C52AAA0B970049D4DB /* NetworkError.swift */; };
+		025138C82AAA110A0049D4DB /* data.cityofnewyork.us.cer in Resources */ = {isa = PBXBuildFile; fileRef = 025138C72AAA110A0049D4DB /* data.cityofnewyork.us.cer */; };
+		025138CA2AAA3D2D0049D4DB /* SATScores.swift in Sources */ = {isa = PBXBuildFile; fileRef = 025138C92AAA3D2D0049D4DB /* SATScores.swift */; };
+		025138CC2AAA3FC10049D4DB /* SATViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 025138CB2AAA3FC10049D4DB /* SATViewModel.swift */; };
+		025138D02AAA43840049D4DB /* APIEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 025138CF2AAA43840049D4DB /* APIEndpoint.swift */; };
+		025138D22AAA47A10049D4DB /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = 025138D12AAA47A10049D4DB /* Request.swift */; };
+		025138D42AAA49C40049D4DB /* SchoolRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 025138D32AAA49C40049D4DB /* SchoolRequest.swift */; };
+		025138D62AAA49E00049D4DB /* ScoreRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 025138D52AAA49E00049D4DB /* ScoreRequest.swift */; };
+		025138DA2AAA5A670049D4DB /* SchoolInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 025138D92AAA5A670049D4DB /* SchoolInfoView.swift */; };
+		025139122AAA62D00049D4DB /* SUIWebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 025139112AAA62D00049D4DB /* SUIWebView.swift */; };
+		025139142AAB56610049D4DB /* SATScoreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 025139132AAB56610049D4DB /* SATScoreView.swift */; };
+		025139172AAB59E30049D4DB /* ScoreSectionFormat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 025139162AAB59E30049D4DB /* ScoreSectionFormat.swift */; };
+		025139192AAB68430049D4DB /* SchoolList.json in Resources */ = {isa = PBXBuildFile; fileRef = 025139182AAB68430049D4DB /* SchoolList.json */; };
+		0251391B2AAB68F00049D4DB /* SchoolViewModelTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0251391A2AAB68F00049D4DB /* SchoolViewModelTest.swift */; };
+		0251391D2AAB692A0049D4DB /* FakeNetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0251391C2AAB692A0049D4DB /* FakeNetworkManager.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		0251389D2AAA01100049D4DB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 025138842AAA010E0049D4DB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0251388B2AAA010E0049D4DB;
+			remoteInfo = JPMCChallenge;
+		};
+		025138A72AAA01100049D4DB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 025138842AAA010E0049D4DB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0251388B2AAA010E0049D4DB;
+			remoteInfo = JPMCChallenge;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0251388C2AAA010E0049D4DB /* JPMCChallenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JPMCChallenge.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0251388F2AAA010E0049D4DB /* JPMCChallengeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JPMCChallengeApp.swift; sourceTree = "<group>"; };
+		025138912AAA010E0049D4DB /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		025138932AAA01100049D4DB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		025138962AAA01100049D4DB /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		0251389C2AAA01100049D4DB /* JPMCChallengeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JPMCChallengeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		025138A02AAA01100049D4DB /* JPMCChallengeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JPMCChallengeTests.swift; sourceTree = "<group>"; };
+		025138A62AAA01100049D4DB /* JPMCChallengeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JPMCChallengeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		025138AA2AAA01100049D4DB /* JPMCChallengeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JPMCChallengeUITests.swift; sourceTree = "<group>"; };
+		025138AC2AAA01100049D4DB /* JPMCChallengeUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JPMCChallengeUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		025138BD2AAA029F0049D4DB /* Schools.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Schools.swift; sourceTree = "<group>"; };
+		025138BF2AAA0AA90049D4DB /* SchoolViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchoolViewModel.swift; sourceTree = "<group>"; };
+		025138C12AAA0B630049D4DB /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		025138C32AAA0B750049D4DB /* NetworkProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkProtocol.swift; sourceTree = "<group>"; };
+		025138C52AAA0B970049D4DB /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
+		025138C72AAA110A0049D4DB /* data.cityofnewyork.us.cer */ = {isa = PBXFileReference; lastKnownFileType = file; path = data.cityofnewyork.us.cer; sourceTree = SOURCE_ROOT; };
+		025138C92AAA3D2D0049D4DB /* SATScores.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SATScores.swift; sourceTree = "<group>"; };
+		025138CB2AAA3FC10049D4DB /* SATViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SATViewModel.swift; sourceTree = "<group>"; };
+		025138CF2AAA43840049D4DB /* APIEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIEndpoint.swift; sourceTree = "<group>"; };
+		025138D12AAA47A10049D4DB /* Request.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Request.swift; sourceTree = "<group>"; };
+		025138D32AAA49C40049D4DB /* SchoolRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchoolRequest.swift; sourceTree = "<group>"; };
+		025138D52AAA49E00049D4DB /* ScoreRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreRequest.swift; sourceTree = "<group>"; };
+		025138D92AAA5A670049D4DB /* SchoolInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchoolInfoView.swift; sourceTree = "<group>"; };
+		025139112AAA62D00049D4DB /* SUIWebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SUIWebView.swift; sourceTree = "<group>"; };
+		025139132AAB56610049D4DB /* SATScoreView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SATScoreView.swift; sourceTree = "<group>"; };
+		025139162AAB59E30049D4DB /* ScoreSectionFormat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreSectionFormat.swift; sourceTree = "<group>"; };
+		025139182AAB68430049D4DB /* SchoolList.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = SchoolList.json; sourceTree = "<group>"; };
+		0251391A2AAB68F00049D4DB /* SchoolViewModelTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchoolViewModelTest.swift; sourceTree = "<group>"; };
+		0251391C2AAB692A0049D4DB /* FakeNetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FakeNetworkManager.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		025138892AAA010E0049D4DB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		025138992AAA01100049D4DB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		025138A32AAA01100049D4DB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		025138832AAA010E0049D4DB = {
+			isa = PBXGroup;
+			children = (
+				0251388E2AAA010E0049D4DB /* JPMCChallenge */,
+				0251389F2AAA01100049D4DB /* JPMCChallengeTests */,
+				025138A92AAA01100049D4DB /* JPMCChallengeUITests */,
+				0251388D2AAA010E0049D4DB /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		0251388D2AAA010E0049D4DB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0251388C2AAA010E0049D4DB /* JPMCChallenge.app */,
+				0251389C2AAA01100049D4DB /* JPMCChallengeTests.xctest */,
+				025138A62AAA01100049D4DB /* JPMCChallengeUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0251388E2AAA010E0049D4DB /* JPMCChallenge */ = {
+			isa = PBXGroup;
+			children = (
+				025138C72AAA110A0049D4DB /* data.cityofnewyork.us.cer */,
+				025138BB2AAA018B0049D4DB /* Model */,
+				025138BA2AAA01820049D4DB /* View */,
+				025138B92AAA01790049D4DB /* ViewModel */,
+				025138BC2AAA01940049D4DB /* Network */,
+				0251388F2AAA010E0049D4DB /* JPMCChallengeApp.swift */,
+				025138932AAA01100049D4DB /* Assets.xcassets */,
+				025138952AAA01100049D4DB /* Preview Content */,
+			);
+			path = JPMCChallenge;
+			sourceTree = "<group>";
+		};
+		025138952AAA01100049D4DB /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				025138962AAA01100049D4DB /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		0251389F2AAA01100049D4DB /* JPMCChallengeTests */ = {
+			isa = PBXGroup;
+			children = (
+				025138A02AAA01100049D4DB /* JPMCChallengeTests.swift */,
+				025139182AAB68430049D4DB /* SchoolList.json */,
+				0251391A2AAB68F00049D4DB /* SchoolViewModelTest.swift */,
+				0251391C2AAB692A0049D4DB /* FakeNetworkManager.swift */,
+			);
+			path = JPMCChallengeTests;
+			sourceTree = "<group>";
+		};
+		025138A92AAA01100049D4DB /* JPMCChallengeUITests */ = {
+			isa = PBXGroup;
+			children = (
+				025138AA2AAA01100049D4DB /* JPMCChallengeUITests.swift */,
+				025138AC2AAA01100049D4DB /* JPMCChallengeUITestsLaunchTests.swift */,
+			);
+			path = JPMCChallengeUITests;
+			sourceTree = "<group>";
+		};
+		025138B92AAA01790049D4DB /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				025138BF2AAA0AA90049D4DB /* SchoolViewModel.swift */,
+				025138CB2AAA3FC10049D4DB /* SATViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		025138BA2AAA01820049D4DB /* View */ = {
+			isa = PBXGroup;
+			children = (
+				025139152AAB59C20049D4DB /* Elements */,
+				025138912AAA010E0049D4DB /* ContentView.swift */,
+				025138D92AAA5A670049D4DB /* SchoolInfoView.swift */,
+				025139112AAA62D00049D4DB /* SUIWebView.swift */,
+				025139132AAB56610049D4DB /* SATScoreView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		025138BB2AAA018B0049D4DB /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				025138BD2AAA029F0049D4DB /* Schools.swift */,
+				025138C92AAA3D2D0049D4DB /* SATScores.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		025138BC2AAA01940049D4DB /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				025138CE2AAA43640049D4DB /* Request */,
+				025138C12AAA0B630049D4DB /* NetworkManager.swift */,
+				025138C32AAA0B750049D4DB /* NetworkProtocol.swift */,
+				025138C52AAA0B970049D4DB /* NetworkError.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		025138CE2AAA43640049D4DB /* Request */ = {
+			isa = PBXGroup;
+			children = (
+				025138CF2AAA43840049D4DB /* APIEndpoint.swift */,
+				025138D12AAA47A10049D4DB /* Request.swift */,
+				025138D32AAA49C40049D4DB /* SchoolRequest.swift */,
+				025138D52AAA49E00049D4DB /* ScoreRequest.swift */,
+			);
+			path = Request;
+			sourceTree = "<group>";
+		};
+		025139152AAB59C20049D4DB /* Elements */ = {
+			isa = PBXGroup;
+			children = (
+				025139162AAB59E30049D4DB /* ScoreSectionFormat.swift */,
+			);
+			path = Elements;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0251388B2AAA010E0049D4DB /* JPMCChallenge */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 025138B02AAA01100049D4DB /* Build configuration list for PBXNativeTarget "JPMCChallenge" */;
+			buildPhases = (
+				025138882AAA010E0049D4DB /* Sources */,
+				025138892AAA010E0049D4DB /* Frameworks */,
+				0251388A2AAA010E0049D4DB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = JPMCChallenge;
+			productName = JPMCChallenge;
+			productReference = 0251388C2AAA010E0049D4DB /* JPMCChallenge.app */;
+			productType = "com.apple.product-type.application";
+		};
+		0251389B2AAA01100049D4DB /* JPMCChallengeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 025138B32AAA01100049D4DB /* Build configuration list for PBXNativeTarget "JPMCChallengeTests" */;
+			buildPhases = (
+				025138982AAA01100049D4DB /* Sources */,
+				025138992AAA01100049D4DB /* Frameworks */,
+				0251389A2AAA01100049D4DB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0251389E2AAA01100049D4DB /* PBXTargetDependency */,
+			);
+			name = JPMCChallengeTests;
+			productName = JPMCChallengeTests;
+			productReference = 0251389C2AAA01100049D4DB /* JPMCChallengeTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		025138A52AAA01100049D4DB /* JPMCChallengeUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 025138B62AAA01100049D4DB /* Build configuration list for PBXNativeTarget "JPMCChallengeUITests" */;
+			buildPhases = (
+				025138A22AAA01100049D4DB /* Sources */,
+				025138A32AAA01100049D4DB /* Frameworks */,
+				025138A42AAA01100049D4DB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				025138A82AAA01100049D4DB /* PBXTargetDependency */,
+			);
+			name = JPMCChallengeUITests;
+			productName = JPMCChallengeUITests;
+			productReference = 025138A62AAA01100049D4DB /* JPMCChallengeUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		025138842AAA010E0049D4DB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1430;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					0251388B2AAA010E0049D4DB = {
+						CreatedOnToolsVersion = 14.3.1;
+					};
+					0251389B2AAA01100049D4DB = {
+						CreatedOnToolsVersion = 14.3.1;
+						TestTargetID = 0251388B2AAA010E0049D4DB;
+					};
+					025138A52AAA01100049D4DB = {
+						CreatedOnToolsVersion = 14.3.1;
+						TestTargetID = 0251388B2AAA010E0049D4DB;
+					};
+				};
+			};
+			buildConfigurationList = 025138872AAA010E0049D4DB /* Build configuration list for PBXProject "JPMCChallenge" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 025138832AAA010E0049D4DB;
+			productRefGroup = 0251388D2AAA010E0049D4DB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0251388B2AAA010E0049D4DB /* JPMCChallenge */,
+				0251389B2AAA01100049D4DB /* JPMCChallengeTests */,
+				025138A52AAA01100049D4DB /* JPMCChallengeUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0251388A2AAA010E0049D4DB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				025138C82AAA110A0049D4DB /* data.cityofnewyork.us.cer in Resources */,
+				025138972AAA01100049D4DB /* Preview Assets.xcassets in Resources */,
+				025138942AAA01100049D4DB /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0251389A2AAA01100049D4DB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				025139192AAB68430049D4DB /* SchoolList.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		025138A42AAA01100049D4DB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		025138882AAA010E0049D4DB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				025138CC2AAA3FC10049D4DB /* SATViewModel.swift in Sources */,
+				025138C02AAA0AA90049D4DB /* SchoolViewModel.swift in Sources */,
+				025138CA2AAA3D2D0049D4DB /* SATScores.swift in Sources */,
+				025138C62AAA0B970049D4DB /* NetworkError.swift in Sources */,
+				025138D22AAA47A10049D4DB /* Request.swift in Sources */,
+				025138922AAA010E0049D4DB /* ContentView.swift in Sources */,
+				025138DA2AAA5A670049D4DB /* SchoolInfoView.swift in Sources */,
+				025138D62AAA49E00049D4DB /* ScoreRequest.swift in Sources */,
+				025139122AAA62D00049D4DB /* SUIWebView.swift in Sources */,
+				025138C42AAA0B750049D4DB /* NetworkProtocol.swift in Sources */,
+				025138C22AAA0B630049D4DB /* NetworkManager.swift in Sources */,
+				025138BE2AAA029F0049D4DB /* Schools.swift in Sources */,
+				025139142AAB56610049D4DB /* SATScoreView.swift in Sources */,
+				025138902AAA010E0049D4DB /* JPMCChallengeApp.swift in Sources */,
+				025138D02AAA43840049D4DB /* APIEndpoint.swift in Sources */,
+				025138D42AAA49C40049D4DB /* SchoolRequest.swift in Sources */,
+				025139172AAB59E30049D4DB /* ScoreSectionFormat.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		025138982AAA01100049D4DB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0251391B2AAB68F00049D4DB /* SchoolViewModelTest.swift in Sources */,
+				025138A12AAA01100049D4DB /* JPMCChallengeTests.swift in Sources */,
+				0251391D2AAB692A0049D4DB /* FakeNetworkManager.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		025138A22AAA01100049D4DB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				025138AD2AAA01100049D4DB /* JPMCChallengeUITestsLaunchTests.swift in Sources */,
+				025138AB2AAA01100049D4DB /* JPMCChallengeUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0251389E2AAA01100049D4DB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0251388B2AAA010E0049D4DB /* JPMCChallenge */;
+			targetProxy = 0251389D2AAA01100049D4DB /* PBXContainerItemProxy */;
+		};
+		025138A82AAA01100049D4DB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0251388B2AAA010E0049D4DB /* JPMCChallenge */;
+			targetProxy = 025138A72AAA01100049D4DB /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		025138AE2AAA01100049D4DB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		025138AF2AAA01100049D4DB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		025138B12AAA01100049D4DB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"JPMCChallenge/Preview Content\"";
+				DEVELOPMENT_TEAM = 23776499PM;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.EdwardDuclervil.JPMCChallenge;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		025138B22AAA01100049D4DB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"JPMCChallenge/Preview Content\"";
+				DEVELOPMENT_TEAM = 23776499PM;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.EdwardDuclervil.JPMCChallenge;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		025138B42AAA01100049D4DB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 23776499PM;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.EdwardDuclervil.JPMCChallengeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/JPMCChallenge.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/JPMCChallenge";
+			};
+			name = Debug;
+		};
+		025138B52AAA01100049D4DB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 23776499PM;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.EdwardDuclervil.JPMCChallengeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/JPMCChallenge.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/JPMCChallenge";
+			};
+			name = Release;
+		};
+		025138B72AAA01100049D4DB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 23776499PM;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.EdwardDuclervil.JPMCChallengeUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = JPMCChallenge;
+			};
+			name = Debug;
+		};
+		025138B82AAA01100049D4DB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 23776499PM;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.EdwardDuclervil.JPMCChallengeUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = JPMCChallenge;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		025138872AAA010E0049D4DB /* Build configuration list for PBXProject "JPMCChallenge" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				025138AE2AAA01100049D4DB /* Debug */,
+				025138AF2AAA01100049D4DB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		025138B02AAA01100049D4DB /* Build configuration list for PBXNativeTarget "JPMCChallenge" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				025138B12AAA01100049D4DB /* Debug */,
+				025138B22AAA01100049D4DB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		025138B32AAA01100049D4DB /* Build configuration list for PBXNativeTarget "JPMCChallengeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				025138B42AAA01100049D4DB /* Debug */,
+				025138B52AAA01100049D4DB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		025138B62AAA01100049D4DB /* Build configuration list for PBXNativeTarget "JPMCChallengeUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				025138B72AAA01100049D4DB /* Debug */,
+				025138B82AAA01100049D4DB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 025138842AAA010E0049D4DB /* Project object */;
+}
