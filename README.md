@@ -22,6 +22,13 @@ A Simple Application Displaying Schools in NYC along with additional info
 
 ## Screenshots
 
+<img width="421" alt="Simulator Screenshot - iPhone X - 2023-09-08 at 14.14.26" src="https://github.com/EdwardDuc/20230907-EdwardDuclervil-NYCSchools/blob/main/JPMCChallenge/JPMCChallenge/Assets.xcassets/Simulator%20Screenshot%20-%20iPhone%20X%20-%202023-09-08%20at%2014.14.26.imageset/Simulator%20Screenshot%20-%20iPhone%20X%20-%202023-09-08%20at%2014.14.26.png">
+<img width="421" alt="Simulator Screenshot - iPhone X - 2023-09-08 at 14.15.16" src="https://github.com/EdwardDuc/20230907-EdwardDuclervil-NYCSchools/blob/main/JPMCChallenge/JPMCChallenge/Assets.xcassets/Simulator%20Screenshot%20-%20iPhone%20X%20-%202023-09-08%20at%2014.15.16.imageset/Simulator%20Screenshot%20-%20iPhone%20X%20-%202023-09-08%20at%2014.15.16.png">
+<img width="421" alt="Simulator Screenshot - iPhone X - 2023-09-08 at 14.15.54" src="https://github.com/EdwardDuc/20230907-EdwardDuclervil-NYCSchools/blob/main/JPMCChallenge/JPMCChallenge/Assets.xcassets/Simulator%20Screenshot%20-%20iPhone%20X%20-%202023-09-08%20at%2014.15.54.imageset/Simulator%20Screenshot%20-%20iPhone%20X%20-%202023-09-08%20at%2014.15.54.png">
+<img width="421" alt="Simulator Screenshot - iPhone X - 2023-09-08 at 14.16.05" src="https://github.com/EdwardDuc/20230907-EdwardDuclervil-NYCSchools/blob/main/JPMCChallenge/JPMCChallenge/Assets.xcassets/Simulator%20Screenshot%20-%20iPhone%20X%20-%202023-09-08%20at%2014.16.05.imageset/Simulator%20Screenshot%20-%20iPhone%20X%20-%202023-09-08%20at%2014.16.05.png">
+<img width="421" alt="Simulator Screenshot - iPhone X - 2023-09-08 at 14.16.23" src="https://github.com/EdwardDuc/20230907-EdwardDuclervil-NYCSchools/blob/main/JPMCChallenge/JPMCChallenge/Assets.xcassets/Simulator%20Screenshot%20-%20iPhone%20X%20-%202023-09-08%20at%2014.16.23.imageset/Simulator%20Screenshot%20-%20iPhone%20X%20-%202023-09-08%20at%2014.16.23.png">
+<img width="421" alt="Simulator Screenshot - iPhone X - 2023-09-08 at 14.16.35" src="https://github.com/EdwardDuc/20230907-EdwardDuclervil-NYCSchools/blob/main/JPMCChallenge/JPMCChallenge/Assets.xcassets/Simulator%20Screenshot%20-%20iPhone%20X%20-%202023-09-08%20at%2014.16.35.imageset/Simulator%20Screenshot%20-%20iPhone%20X%20-%202023-09-08%20at%2014.16.35.png">
+
 
 ### Shortcomings
     - Due to time constraints, The UI sufffered greatly. 
