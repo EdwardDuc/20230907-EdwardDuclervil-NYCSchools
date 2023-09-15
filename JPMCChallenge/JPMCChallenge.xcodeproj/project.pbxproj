@@ -33,6 +33,12 @@
 		025139192AAB68430049D4DB /* SchoolList.json in Resources */ = {isa = PBXBuildFile; fileRef = 025139182AAB68430049D4DB /* SchoolList.json */; };
 		0251391B2AAB68F00049D4DB /* SchoolViewModelTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0251391A2AAB68F00049D4DB /* SchoolViewModelTest.swift */; };
 		0251391D2AAB692A0049D4DB /* FakeNetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0251391C2AAB692A0049D4DB /* FakeNetworkManager.swift */; };
+		02A6EC462AB4865F00C17647 /* Locality.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02A6EC452AB4865F00C17647 /* Locality.swift */; };
+		02A6EC482AB48A2400C17647 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02A6EC472AB48A2400C17647 /* MapView.swift */; };
+		02A6EC4A2AB48D3B00C17647 /* MyLocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02A6EC492AB48D3B00C17647 /* MyLocationManager.swift */; };
+		02A6EC4E2AB48F3600C17647 /* MapAnnotationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02A6EC4D2AB48F3600C17647 /* MapAnnotationView.swift */; };
+		02A6EC502AB4A18000C17647 /* HexColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02A6EC4F2AB4A18000C17647 /* HexColor.swift */; };
+		02A6EC522AB4B56E00C17647 /* Backporting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02A6EC512AB4B56E00C17647 /* Backporting.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -82,6 +88,12 @@
 		025139182AAB68430049D4DB /* SchoolList.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = SchoolList.json; sourceTree = "<group>"; };
 		0251391A2AAB68F00049D4DB /* SchoolViewModelTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchoolViewModelTest.swift; sourceTree = "<group>"; };
 		0251391C2AAB692A0049D4DB /* FakeNetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FakeNetworkManager.swift; sourceTree = "<group>"; };
+		02A6EC452AB4865F00C17647 /* Locality.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Locality.swift; sourceTree = "<group>"; };
+		02A6EC472AB48A2400C17647 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
+		02A6EC492AB48D3B00C17647 /* MyLocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyLocationManager.swift; sourceTree = "<group>"; };
+		02A6EC4D2AB48F3600C17647 /* MapAnnotationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapAnnotationView.swift; sourceTree = "<group>"; };
+		02A6EC4F2AB4A18000C17647 /* HexColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HexColor.swift; sourceTree = "<group>"; };
+		02A6EC512AB4B56E00C17647 /* Backporting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Backporting.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -177,6 +189,7 @@
 			children = (
 				025138BF2AAA0AA90049D4DB /* SchoolViewModel.swift */,
 				025138CB2AAA3FC10049D4DB /* SATViewModel.swift */,
+				02A6EC492AB48D3B00C17647 /* MyLocationManager.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -189,6 +202,7 @@
 				025138D92AAA5A670049D4DB /* SchoolInfoView.swift */,
 				025139112AAA62D00049D4DB /* SUIWebView.swift */,
 				025139132AAB56610049D4DB /* SATScoreView.swift */,
+				02A6EC472AB48A2400C17647 /* MapView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -198,6 +212,7 @@
 			children = (
 				025138BD2AAA029F0049D4DB /* Schools.swift */,
 				025138C92AAA3D2D0049D4DB /* SATScores.swift */,
+				02A6EC452AB4865F00C17647 /* Locality.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -228,6 +243,9 @@
 			isa = PBXGroup;
 			children = (
 				025139162AAB59E30049D4DB /* ScoreSectionFormat.swift */,
+				02A6EC4D2AB48F3600C17647 /* MapAnnotationView.swift */,
+				02A6EC4F2AB4A18000C17647 /* HexColor.swift */,
+				02A6EC512AB4B56E00C17647 /* Backporting.swift */,
 			);
 			path = Elements;
 			sourceTree = "<group>";
@@ -366,18 +384,24 @@
 			files = (
 				025138CC2AAA3FC10049D4DB /* SATViewModel.swift in Sources */,
 				025138C02AAA0AA90049D4DB /* SchoolViewModel.swift in Sources */,
+				02A6EC4E2AB48F3600C17647 /* MapAnnotationView.swift in Sources */,
 				025138CA2AAA3D2D0049D4DB /* SATScores.swift in Sources */,
 				025138C62AAA0B970049D4DB /* NetworkError.swift in Sources */,
 				025138D22AAA47A10049D4DB /* Request.swift in Sources */,
 				025138922AAA010E0049D4DB /* ContentView.swift in Sources */,
+				02A6EC462AB4865F00C17647 /* Locality.swift in Sources */,
 				025138DA2AAA5A670049D4DB /* SchoolInfoView.swift in Sources */,
 				025138D62AAA49E00049D4DB /* ScoreRequest.swift in Sources */,
 				025139122AAA62D00049D4DB /* SUIWebView.swift in Sources */,
 				025138C42AAA0B750049D4DB /* NetworkProtocol.swift in Sources */,
 				025138C22AAA0B630049D4DB /* NetworkManager.swift in Sources */,
+				02A6EC522AB4B56E00C17647 /* Backporting.swift in Sources */,
+				02A6EC502AB4A18000C17647 /* HexColor.swift in Sources */,
 				025138BE2AAA029F0049D4DB /* Schools.swift in Sources */,
 				025139142AAB56610049D4DB /* SATScoreView.swift in Sources */,
 				025138902AAA010E0049D4DB /* JPMCChallengeApp.swift in Sources */,
+				02A6EC482AB48A2400C17647 /* MapView.swift in Sources */,
+				02A6EC4A2AB48D3B00C17647 /* MyLocationManager.swift in Sources */,
 				025138D02AAA43840049D4DB /* APIEndpoint.swift in Sources */,
 				025138D42AAA49C40049D4DB /* SchoolRequest.swift in Sources */,
 				025139172AAB59E30049D4DB /* ScoreSectionFormat.swift in Sources */,

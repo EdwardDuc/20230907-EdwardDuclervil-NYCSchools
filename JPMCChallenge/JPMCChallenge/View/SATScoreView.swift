@@ -23,7 +23,11 @@ struct SATScoreView: View {
             case .emptyState:
                 emptyStateView()
             }
-        }.onAppear{
+        }
+        .padding(.vertical,80.0)
+        .background(Color.init(hex: "EADDFF"))
+        .ignoresSafeArea()
+        .onAppear{
             scoreViewModel.getScoreDataFromAPI(urlString: APIEndpoint.satScoreEndpoint, dbn: dbn)
         }
         
@@ -38,14 +42,16 @@ struct SATScoreView: View {
     @ViewBuilder
     func loadedStateView() -> some View {
         // Nil Coalescing should never be reached due to checks within the ViewModel, but just to be safe
-        Text(scoreViewModel.satInfo?.schoolName ?? "Nothing")
-        Text("Average SAT Scores")
+        Text(scoreViewModel.satInfo?.schoolName ?? "Nothing").font(.title).fontWeight(.bold).multilineTextAlignment(.center)
+        Spacer()
+        Text("Average SAT Scores").font(.title2).fontWeight(.bold)
         
         ScoreSectionFormat(leftText: "Number of Test Takers:", rightText: scoreViewModel.satInfo?.numOfSatTestTakers ?? "0")
         Divider()
         ScoreSectionFormat(leftText: "Math:", rightText: scoreViewModel.satInfo?.satMathAvgScore ?? "0")
         ScoreSectionFormat(leftText: "Writing:", rightText: scoreViewModel.satInfo?.satWritingAvgScore ?? "0")
         ScoreSectionFormat(leftText: "Critical Reading:", rightText: scoreViewModel.satInfo?.satCriticalReadingAvgScore ?? "0")
+        Spacer()
     }
     
     @ViewBuilder

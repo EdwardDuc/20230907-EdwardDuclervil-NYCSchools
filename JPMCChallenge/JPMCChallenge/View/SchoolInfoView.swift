@@ -15,18 +15,17 @@ struct SchoolInfoView: View {
     var body: some View {
         VStack{
             Section{
-                Text(schoolInfo.schoolName).font(.title).multilineTextAlignment(.center).padding(.horizontal)
+                Text(schoolInfo.schoolName).font(.title).fontWeight(.heavy).multilineTextAlignment(.center).padding(.horizontal)
                 showBorough()
                     .font(.subheadline)
                     .foregroundColor(.gray)
                 Text(schoolInfo.location).multilineTextAlignment(.center).padding(.horizontal)
-                Text(schoolInfo.phoneNumber)
-                showEmail()
                 NavigationLink{
                     SUIWebView(schoolSite: schoolInfo.website)
                 } label: {
                     Text("Visit Website")
                 }
+                showMapView()
             }
             Divider()
             Section{
@@ -36,10 +35,11 @@ struct SchoolInfoView: View {
             ScrollView{
                 //Due to time contstraints, I've re-purposed the SAT Score Format to display the data.
                 Section {
+                    Text("School Overview").font(.title2).fontWeight(.heavy).padding(.bottom)
                     if showFullText{
                         Text(schoolInfo.overviewParagraph).multilineTextAlignment(.center)
                     } else {
-                        Text(schoolInfo.overviewParagraph.prefix(100)+"...").multilineTextAlignment(.center)
+                        Text(schoolInfo.overviewParagraph.prefix(200)+"...").multilineTextAlignment(.center)
                     }
                     Button(buttonText){
                         showFullText.toggle()
@@ -50,13 +50,10 @@ struct SchoolInfoView: View {
                         }
                     }
                 }.padding(.horizontal)
-                Divider()
-                ScoreSectionFormat(leftText: "Total Students:", rightText: schoolInfo.totalStudents)
-                ScoreSectionFormat(leftText: "Attendance Rate:", rightText: convertPercentage(strDouble: schoolInfo.attendanceRate)+"%")
-                ScoreSectionFormat(leftText: "Total Students:", rightText: schoolInfo.totalStudents)
-                Divider()
-                Text("Academic Opportunities").font(.title2)
-                Text(schoolInfo.academicopportunities1!).multilineTextAlignment(.center).padding(.horizontal)
+                showContacts()
+                showSchoolStats()
+                showAcademicOpp()
+                showExCurr()
             }
             Button("Show SAT Statistics"){
                 isPresented.toggle()
@@ -64,6 +61,9 @@ struct SchoolInfoView: View {
                 SATScoreView(dbn: schoolInfo.dbn)
             }
         }
+        .padding(.vertical,80.0)
+        .background(Color.init(hex: "EADDFF"))
+        .ignoresSafeArea()
     }
     
     @ViewBuilder
@@ -96,12 +96,126 @@ struct SchoolInfoView: View {
         return percentString
     }
     
+    
+    
+    @ViewBuilder
+    func showSchoolStats() -> some View {
+        VStack{
+            Text("School Stats").font(.title2).fontWeight(.heavy).padding(.bottom)
+            ScoreSectionFormat(leftText: "Total Students:", rightText: schoolInfo.totalStudents)
+            ScoreSectionFormat(leftText: "Grades:", rightText: schoolInfo.finalgrades)
+            showStartEndTime()
+            ScoreSectionFormat(leftText: "Attendance Rate:", rightText: convertPercentage(strDouble: schoolInfo.attendanceRate)+"%")
+            showGradRate()
+            showSchoolType()
+        }
+        Divider()
+    }
+    
+    @ViewBuilder
+    func showGradRate() -> some View {
+        if schoolInfo.academicopportunities5 == nil {
+            EmptyView()
+        } else {
+            ScoreSectionFormat(leftText: "Graduation Rate:", rightText: convertPercentage(strDouble: schoolInfo.graduationRate!)+"%")
+        }
+    }
+    
+    @ViewBuilder
+    func showAcademicOpp() -> some View {
+        Text("Academic Opportunities").font(.title2).fontWeight(.heavy).padding(.bottom)
+        Text(schoolInfo.academicopportunities1!).multilineTextAlignment(.center).padding(.horizontal)
+        if schoolInfo.academicopportunities2 != nil {
+            Text(schoolInfo.academicopportunities2!).multilineTextAlignment(.center).padding(.horizontal)
+        }
+        if schoolInfo.academicopportunities3 != nil {
+            Text(schoolInfo.academicopportunities3!).multilineTextAlignment(.center).padding(.horizontal)
+        }
+        if schoolInfo.academicopportunities4 != nil {
+            Text(schoolInfo.academicopportunities4!).multilineTextAlignment(.center).padding(.horizontal)
+        }
+        if schoolInfo.academicopportunities5 != nil {
+            Text(schoolInfo.academicopportunities5!).multilineTextAlignment(.center).padding(.horizontal)
+        }
+        Divider()
+        
+    }
+    
+    @ViewBuilder
+    func showExCurr() -> some View {
+        Text("Extracurricular Activities").font(.title2).fontWeight(.heavy).padding(.bottom)
+        if schoolInfo.extracurricularActivities != nil {
+            Text(schoolInfo.extracurricularActivities!).multilineTextAlignment(.center).padding(.horizontal)
+        }
+        Divider()
+    }
+    
+    @ViewBuilder
+    func showStartEndTime() -> some View {
+        if schoolInfo.startTime != nil && schoolInfo.endTime != nil{
+            ScoreSectionFormat(leftText: "Time:", rightText: schoolInfo.startTime!+" - "+schoolInfo.endTime!)
+        }
+    }
+    
+    @ViewBuilder
+    func showContacts() -> some View {
+        Divider()
+        VStack{
+            Text("Contact Us").font(.title2).fontWeight(.heavy).padding(.bottom)
+            HStack{
+                Image(systemName: "phone.down.fill")
+                Link(schoolInfo.phoneNumber, destination: URL(string: "tel:"+schoolInfo.phoneNumber)!)
+            }
+            showFax()
+            showEmail()
+        }
+        Divider()
+    }
+    
+    
     @ViewBuilder
     func showEmail() -> some View {
         if schoolInfo.schoolEmail == nil {
             EmptyView()
         } else {
-            Text(schoolInfo.schoolEmail!)
+            Link(schoolInfo.schoolEmail!, destination: URL(string: "mailto:"+schoolInfo.schoolEmail!)!)
+        }
+    }
+    
+    @ViewBuilder
+    func showSchoolType() -> some View {
+        if schoolInfo.boys != nil {
+            ScoreSectionFormat(leftText: "Type:", rightText: "All Boy's School")
+        } else if schoolInfo.girls != nil {
+            ScoreSectionFormat(leftText: "Type:", rightText: "All Girl's School")
+        } else {
+            ScoreSectionFormat(leftText: "Type:", rightText: "Co-Ed")
+        }
+    }
+    
+    @ViewBuilder
+    func showFax() -> some View {
+        if schoolInfo.faxNumber == nil {
+            EmptyView()
+        } else {
+            HStack{
+                Image(systemName: "faxmachine")
+                Text(schoolInfo.faxNumber!)
+            }
+        }
+    }
+    
+    @ViewBuilder
+    func showMapView() -> some View {
+        if schoolInfo.latitude == nil || schoolInfo.longitude == nil {
+            EmptyView()
+        } else {
+            NavigationLink{
+                let local = Locality(school: schoolInfo)
+                MapView(local: local)
+            } label: {
+                Text("Show On Map")
+            }
         }
     }
 }
@@ -125,6 +239,7 @@ struct SchoolInfoView_Previews: PreviewProvider {
             totalStudents: "461",
             extracurricularActivities: "Student Voice Collaborative, City Explorers, Fit and Fly at New York Sports Club, Leadership, Athletic and Tutoring Programs at Vanderbilt YMCA, Radio Rootz, Tutoring in major subject areas, Vanguard Movement, Vanguard Student Government, WNYC Radio Rookies, Drama, Fashion",
             attendanceRate: "0.870000005",
+            finalgrades: "6-12",
             city: "Manhattan",
             latitude: "40.76564",
             longitude: "-73.9598",

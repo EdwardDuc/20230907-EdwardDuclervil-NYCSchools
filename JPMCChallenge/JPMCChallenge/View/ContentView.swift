@@ -10,10 +10,11 @@ import SwiftUI
 struct ContentView: View {
     @StateObject var schoolViewModel = SchoolViewModel(networkManager: NetworkManager())
     @State var searchField:String = ""
+    
     var body: some View {
         NavigationView{
             VStack{
-                //Using a View State set within the ViewModel allows for different options as our initial view. 
+                //Using a View State set within the ViewModel allows for different options as our initial view.
                 switch schoolViewModel.viewState{
                 case .loadingState:
                     ProgressView()
@@ -25,21 +26,25 @@ struct ContentView: View {
                     EmptyView()
                 }
             }
-            .padding()
-        }.onAppear {
-            if schoolViewModel.schoolList.count == 0 {
-                schoolViewModel.getSchoolDataFromAPI(urlString: APIEndpoint.schoolEndpoint)
+            .padding(.vertical,40.0)
+            .padding(.horizontal)
+            .frame(maxWidth: .infinity, maxHeight: .infinity)
+            .background(Color.init(hex: "EADDFF")).ignoresSafeArea()
+            .onAppear {
+                if schoolViewModel.schoolList.count == 0 {
+                    schoolViewModel.getSchoolDataFromAPI(urlString: APIEndpoint.schoolEndpoint)
+                }
             }
+            .onChange(of: searchField) { newValue in
+                schoolViewModel.filterSchoolList(searchText: newValue)
+            }
+            
+            
         }
-        .onChange(of: searchField) { newValue in
-            schoolViewModel.filterSchoolList(searchText: newValue)
-        }
-       
     }
- 
     @ViewBuilder
     func errorStateView() -> some View {
-        Text(schoolViewModel.networkBasedErrors?.errorDescription ?? "No Error Description Provided")
+        Text(schoolViewModel.networkBasedErrors?.errorDescription ?? "No Error Description Provided").multilineTextAlignment(.center)
     }
     
  
@@ -53,9 +58,13 @@ struct ContentView: View {
             } label: {
                 VStack{
                     Text(school.schoolName)
+                    
                 }
-            }
-        }.listStyle(.inset)
+            }.listRowBackground(Color.init(hex: "EADDFF")).ignoresSafeArea()
+        }
+        .listStyle(.plain)
+        
+            
     }
 
 }

@@ -21,6 +21,7 @@ struct ScoreSectionFormat: View {
                 .fontWeight(.bold)
         }
         .padding([.horizontal])
+        .padding(.vertical,5.0)
 
     }
 }

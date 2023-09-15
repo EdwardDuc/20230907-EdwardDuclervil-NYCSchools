@@ -18,7 +18,7 @@ struct School: Identifiable, Decodable {
     let faxNumber, schoolEmail: String?
     let website, totalStudents: String
     let extracurricularActivities: String?
-    let attendanceRate, city: String
+    let attendanceRate, finalgrades, city: String
     let latitude, longitude, borough: String?
     let academicopportunities3, languageClasses, academicopportunities4, academicopportunities5: String?
     let startTime, endTime, graduationRate, girls: String?
@@ -37,7 +37,7 @@ struct School: Identifiable, Decodable {
         case totalStudents = "total_students"
         case extracurricularActivities = "extracurricular_activities"
         case attendanceRate = "attendance_rate"
-        case city, latitude, longitude, borough, academicopportunities3
+        case finalgrades, city, latitude, longitude, borough, academicopportunities3
         case languageClasses = "language_classes"
         case academicopportunities4, academicopportunities5
         case startTime = "start_time"
